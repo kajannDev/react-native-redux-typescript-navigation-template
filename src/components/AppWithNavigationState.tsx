@@ -44,7 +44,7 @@ const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators({}, dispatch)
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(AppWithNavigationState);
+export const App = connect(mapStateToProps, mapDispatchToProps)(AppWithNavigationState);
 
 interface INav {
     routes: Array<any>;

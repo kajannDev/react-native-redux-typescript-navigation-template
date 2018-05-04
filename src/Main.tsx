@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import AppWithNavigationState from './components/AppWithNavigationState';
+import { App } from './components/AppWithNavigationState';
 import { store } from './store';
 
 export default class Main extends Component<IProps, IState> {
@@ -16,7 +16,7 @@ export default class Main extends Component<IProps, IState> {
     public render() {
         return (
             <Provider store={store}>
-                <AppWithNavigationState />
+                <App />
             </Provider>
         );
     }
